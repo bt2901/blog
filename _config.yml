@@ -37,7 +37,7 @@ typekit_kit_id:
 theme: minima
 # gems: [jekyll-paginate]
 # markdown: kramdown
-# permalink: none
+permalink: none
 plugins:
   - jekyll-feed
 

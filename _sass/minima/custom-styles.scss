@@ -19,19 +19,19 @@
 @font-face {
     font-family: NK;
     src: url($baseurl + "/assets/fonts/NK237.otf") format("opentype");
-    unicode-range: U+0020-0040, U+0400-052F, U+1C80-1C8F; /* Punctuation, Cyrillic, Cyrillic Supplement, Cyrillic Extended C */
+    // unicode-range: U+0020-0040, U+0400-052F, U+1C80-1C8F; /* Punctuation, Cyrillic, Cyrillic Supplement, Cyrillic Extended C */
 }
 @font-face {
     font-family: NK;
     font-weight: bold;
     src: url($baseurl + "/assets/fonts/NK238.otf") format("opentype");
-    unicode-range: U+0020-0040, U+0400-052F, U+1C80-1C8F; /* Punctuation, Cyrillic, Cyrillic Supplement, Cyrillic Extended C */
+    // unicode-range: U+0020-0040, U+0400-052F, U+1C80-1C8F; /* Punctuation, Cyrillic, Cyrillic Supplement, Cyrillic Extended C */
 }
 @font-face {
     font-family: NK;
     font-style: italic;
     src: url($baseurl + "/assets/fonts/NK239.otf") format("opentype");
-    unicode-range: U+0020-0040, U+0400-052F, U+1C80-1C8F; /* Punctuation, Cyrillic, Cyrillic Supplement, Cyrillic Extended C */
+    // unicode-range: U+0020-0040, U+0400-052F, U+1C80-1C8F; /* Punctuation, Cyrillic, Cyrillic Supplement, Cyrillic Extended C */
 }
 
 @font-face { 
