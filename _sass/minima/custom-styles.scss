@@ -57,7 +57,7 @@
 	src: url($baseurl + "/assets/fonts/Vollkorn-SemiBold.woff2") format('woff2');
 	src: url($baseurl + "/assets/fonts/Vollkorn-SemiBold.woff") format('woff');
 	font-weight: 600;
-	font-style:normal;
+	font-style:bold;
         size-adjust: 95%;
 }
 
@@ -76,3 +76,26 @@ p {
 // p + img ~ p + small {
 //    margin-left: 10px;
 //}
+.boxed{
+        border: 1px solid black ;
+        display: inline;  
+}
+.prefix{
+        padding-top: 1em;
+        padding-right: 1.5px;
+        background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.2' width='30px' ><path d='M 1 18 L 30 18 L 30 25' style='stroke:rgb(50,50,50);stroke-width:1' fill='none' ></path></svg>");
+        background-size: 100%;
+        background-repeat:no-repeat;
+}
+.suffix{
+        padding-top: 1em;
+        background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.2' width='30px' preserveAspectRatio='none'><path d='M 2 19 L 15 10.5 L 15 10.5 L 28 19' style='stroke:rgb(50,50,50);stroke-width:1' fill='none' vector-effect='non-scaling-stroke'></path></svg>");
+        background-size: 100%;
+        background-repeat:no-repeat;
+}
+.root{
+        padding-top: 1em;
+        background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.2' baseProfile='full' preserveAspectRatio='none' width='100px' height='100px'  ><path d='M 0 35 Q 50 0 100 35' style='stroke:rgb(50,50,50);stroke-width:1' fill='none' ></path></svg>");
+        background-size: 100%;
+        background-repeat:no-repeat;
+}
