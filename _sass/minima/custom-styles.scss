@@ -24,13 +24,13 @@
 @font-face {
     font-family: NK;
     font-weight: bold;
-    src: url($baseurl + "/assets/fonts/NK238.otf") format("opentype");
+    src: url($baseurl + "/assets/fonts/NK239.otf") format("opentype");
     // unicode-range: U+0020-0040, U+0400-052F, U+1C80-1C8F; /* Punctuation, Cyrillic, Cyrillic Supplement, Cyrillic Extended C */
 }
 @font-face {
     font-family: NK;
     font-style: italic;
-    src: url($baseurl + "/assets/fonts/NK239.otf") format("opentype");
+    src: url($baseurl + "/assets/fonts/NK238.otf") format("opentype");
     // unicode-range: U+0020-0040, U+0400-052F, U+1C80-1C8F; /* Punctuation, Cyrillic, Cyrillic Supplement, Cyrillic Extended C */
 }
 
@@ -76,6 +76,18 @@ p {
 // p + img ~ p + small {
 //    margin-left: 10px;
 //}
+
+p:has(img) { 
+    text-align: center;
+}
+
+img + em { 
+    // font-size: smaller; 
+    display: inline-block;
+    font-family: vollkorn;
+    font-feature-settings: "ss04";
+}
+
 .boxed{
         border: 1px solid black ;
         display: inline;  
@@ -94,8 +106,51 @@ p {
         background-repeat:no-repeat;
 }
 .root{
-        padding-top: 1em;
+        padding-top: 0.5em;
         background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.2' baseProfile='full' preserveAspectRatio='none' width='100px' height='100px'  ><path d='M 0 35 Q 50 0 100 35' style='stroke:rgb(50,50,50);stroke-width:1' fill='none' ></path></svg>");
         background-size: 100%;
         background-repeat:no-repeat;
+}
+
+.gridleft { 
+  grid-area: gridleft; 
+  font-family: "vollkorn", serif; 
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 45px;
+  vertical-align: bottom;  
+}
+.gridright { 
+  grid-area: gridright; 
+  font-family: "NK", serif; 
+  font-weight: 400;
+  font-size: 25px;
+        /* letter-spacing: 2px;
+        display: inline-block;
+        transform: scaleY(0.5);
+        transform-origin: 0 0; */
+}
+.gridfooter { 
+  grid-area: gridfooter; 
+  font-weight: 400;
+  font-family: "NK", serif; 
+  font-size: 25px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'gridleft gridright '
+    'gridleft gridfooter ';
+  gap: 0px;
+  padding: 10px 0 0 0;
+}
+
+.grid-container > div {
+  display: grid;
+  letter-spacing: 0px;
+  line-height: 15px;
+  text-align: left;
+  align-content: center;
+
 }
