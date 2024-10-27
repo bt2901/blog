@@ -12,7 +12,10 @@ img {
 }
 </style>
 
-Ljudi mogųt koristati cifry od 0 do 9 kako stilizovane bukvy, to ne jest novinojų. Najvyše znajemy priměr, věrojętno, jest anglijsky *1337-speak*, kde bukvy zaměnjajųt sę na jih bližajši vizualny ekvivalent iz cifr: 4 zaměsto "A", 5 zaměsto "S", 0 zaměsto "O" i tako dalje. Prěměna jednyh symbolov iz ASCII (bukv) na druge symboly iz ASCII (cifry) ne jest plod někakoj realnoj potrěbnosti; ako li govoriti bez učtivosti, 1337-speak jest izzvan želańjem ljudij *vypętriti sę*. Tuto ne jest jedinstveny povod koristati cifry zaměsto bukv.
+Ljudi mogųt koristati cifry od 0 do 9 kako stilizovane bukvy, to ne jest novinojų. Najvyše znajemy priměr, věrojętno, jest anglijsky *1337-speak*, kde bukvy zaměnjajųt sę na jih bližajši vizualny ekvivalent iz cifr: 4 zaměsto "A", 5 zaměsto "S", 0 zaměsto "O" i tako dalje. Prěměna jednyh symbolov iz ASCII (bukv) na druge symboly iz ASCII (cifry) ne jest plod někakoj realnoj potrěbnosti; ako li govoriti bez učtivosti, 1337-speak jest izzvan želańjem ljudij *izpętriti sę*[^showoff]. Tuto ne jest jedinstveny povod koristati cifry zaměsto bukv.
+
+
+[^showoff]: Pomilujte mę za glupų směškų: russky glagol "выпендриваться" etimologično izhodi od `*vy-pętriti sę` i označaje "ekshibovati sę, da by dobyti ljudskų uvagų i pohvalų". Kako i `1337SP34K`, moje koristańje medžuslovjanifikovanoj formy slengovogo slova gorši råzumlivosť zaradi možnosti izstaviti svojų intelektualnosť. Směška jest sebe-referentna.
 
 Poněkȯgda zaměna bukv na cifry jest rezultat defekta pristųpnosti "pravilnyh" simbolov. Tak, napr., bukva Ҕҕ iz kirilličnogo jakutskogo alfabeta sę čęsto zaměnjaje na 5 vslěd togo že tų cifrų je vyše legko najdti na klavišnicah. Vyše radikalno, kirilični Slovjani čęsto imajųt někaky sistem transliteracije vlastnoj azbuky do nabora latinskyh ASCII-znakov. Imam na myslji bulgarsko-makedonsky sistem "шльокавица" (nazva izhodi od slova, označajųćego "durna rakija") i iztočnoslovjansky "транслит". V takyh slučajah osnovojų zaměn može byti vizualno srodstvo (Ъъ = 1, Зз = 3, or even things like Яя = 9I and Ыы = 61), fonetična blizosť (Шш = 6, tomu čto imę cifry sę počinaje na "š": "šesť"; Чч = 4, bo nazva jest "četiri") ili až pozicija na standardnoj tipkovnice (Яя = q, tomu čto bulgarsko råzložeńje klaviatury ЯВЕРТЪ ima ravnakų klavišų za latinskų `q` i kiriličnų `я`).
 
@@ -52,8 +55,10 @@ Take języky (Hmong, Zhuang, Unified Miao) sųt čempiony odnosno koristańja la
 | 2          | Ƨƨ           | z    | Osnovana na cifrě 2 |
 | 3          | Зз           | j    | Bukva kirilice      |
 | 4          | Чч           | x    | Bukva kirilice      |
-| 5          | Ƽƽ           | q    | Osnovana na cifrě 5 |
+| 5          | Ƽƽ           | q    | Osnovana na cifrě 5[^B] |
 | 6          | Ƅƅ           | h    | Osnovana na cifrě 6 |
+
+[^B]: Znak Ƽƽ ima osoblivo město v mojem sŕdcu, tomu čto nazva tutogo bloga je rodžena hvala podobnosti medžu kirilličnoj `Б` i cifrojų `5` v kontekstu mojego prězimena, zlo natipkanogo na značku jednoj konferencije.
 
 ## Dvanadsęty sistem čislěńja
 
