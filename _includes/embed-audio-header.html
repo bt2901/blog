@@ -1,0 +1,79 @@
+<script>
+function registerAudio(player_id) {
+    // Auxilary function to avoid global scope pollution
+    const audio = document.getElementById(player_id);
+    const container = audio.parentElement;
+    const button = container.querySelector('.play-button');
+    
+    button.addEventListener('click', () => {
+        audio.paused ? audio.play() : audio.pause();
+    });
+    
+    audio.addEventListener('play', () => button.textContent = '⏸');
+    audio.addEventListener('pause', () => button.textContent = '▶️');
+};
+</script>
+
+<style>
+.audio-player {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.play-button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 1.2em;
+    color: inherit;
+}
+
+audio {
+    display: none;
+}
+
+/* Compact audio player styles */
+.compact-audio {
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+}
+
+.compact-audio audio {
+    height: 30px;
+    width: 40px;
+}
+
+/* Hide all controls except play/pause */
+.compact-audio audio::-webkit-media-controls-panel {
+    display: flex;
+    justify-content: center;
+    background: transparent;
+}
+
+.compact-audio audio::-webkit-media-controls-timeline,
+.compact-audio audio::-webkit-media-controls-current-time-display,
+.compact-audio audio::-webkit-media-controls-time-remaining-display,
+.compact-audio audio::-webkit-media-controls-mute-button,
+.compact-audio audio::-webkit-media-controls-volume-slider,
+.compact-audio audio::-webkit-media-controls-toggle-closed-captions-button {
+    display: none !important;
+}
+
+/* Style play/pause button */
+.compact-audio audio::-webkit-media-controls-play-button {
+    display: block !important;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+/* For Firefox */
+.compact-audio audio {
+    max-width: 40px;
+    max-height: 30px;
+}
+
+
+</style>

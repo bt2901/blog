@@ -1,0 +1,14 @@
+{% assign player_id = include.src | slugify %}
+<div class="audio-player" data-audio-src="{{ site.baseurl }}/assets/audio/{{ include.src }}">
+    <button class="play-button" aria-label="Play/Pause">
+        ▶️
+    </button>
+    <audio id="{{ player_id }}">
+        <source src="{{ site.baseurl }}/assets/audio/{{ include.src }}" type="audio/mpeg">
+    </audio>
+</div>
+
+<script>
+    // Self-executing function to avoid global scope pollution
+    registerAudio("{{ player_id }}");
+</script>
