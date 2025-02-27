@@ -1,17 +1,24 @@
 <script>
-function registerAudio(player_id) {
+function registerAudio(audio_elem) {
     // Auxilary function to avoid global scope pollution
-    const audio = document.getElementById(player_id);
-    const container = audio.parentElement;
+    const container = audio_elem.parentElement;
     const button = container.querySelector('.play-button');
     
     button.addEventListener('click', () => {
-        audio.paused ? audio.play() : audio.pause();
+        audio_elem.paused ? audio_elem.play() : audio_elem.pause();
     });
     
-    audio.addEventListener('play', () => button.textContent = '⏸');
-    audio.addEventListener('pause', () => button.textContent = '▶️');
+    audio_elem.addEventListener('play', () => button.textContent = '⏸');
+    audio_elem.addEventListener('pause', () => button.textContent = '▶️');
 };
+
+window.onload = function() {
+    // connect each audio element to a listener
+    document.querySelectorAll("audio").forEach(elem => {
+        registerAudio(elem)
+    })
+};
+
 </script>
 
 <style>
